@@ -24,7 +24,8 @@ meteorhacks:npm
 meteoric:ionic-sass
 meteoric:ionicons-sass
 react
-reactrouter:react-router
 
 
 npm-container
+kadira:flow-router
+kadira:reaktor
