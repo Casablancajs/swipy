@@ -6,8 +6,7 @@ Reaktor.init(
         <Route name="home" path="/" layout ={AppBody} content={Home} />
         <Route name="other" path="/other" layout ={AppBody} content={Other} />
         <Route name="settings" path="/settings"  layout ={AppBody} content={Settings} />
-        <Router.DefaultRoute content={AppLoading} layout ={AppBody} />
-        <Router.NotFoundRoute content={AppNotFound}  layout ={AppBody} />
+
     </Router>
 );
 

@@ -3,11 +3,12 @@ AppBody = React.createClass({
         return (
             <div className="ionic-body">
                 <div className="bar bar-header bar-light">
-                    test
+                   <a href="test" >test</a>
                 </div>
                 <div className="view">
                     <div className="scroll-content ionic-scroll">
                         <div className="content overflow-scroll has-header">
+                            
                         </div>
                     </div>
                 </div>
