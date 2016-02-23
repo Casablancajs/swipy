@@ -37,7 +37,6 @@ jquery@1.11.4
 jsx@0.2.3
 kadira:flow-router@2.10.1
 kadira:react-layout@1.5.3
-kadira:reaktor@1.2.0
 launch-screen@1.0.4
 livedata@1.0.15
 logging@1.0.8

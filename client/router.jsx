@@ -1,19 +1,27 @@
-
-
-
-Reaktor.init(
-    <Router>
-        <Route name="home" path="/" layout ={AppBody} content={Home} />
-        <Route name="other" path="/other" layout ={AppBody} content={Other} />
-        <Route name="settings" path="/settings"  layout ={AppBody} content={Settings} />
-
-    </Router>
-);
-
-
-Meteor.startup(function () {
-    const root = document.createElement('app');
-    root.setAttribute('id', 'root');
-    document.body.appendChild(root);
-   // ReactDOM.render(routes,document.getElementById("app"));
+FlowRouter.route("/", {
+    action: function() {
+        ReactLayout.render(AppBody, {
+            content: <Home />
+        });
+    }
 });
+
+FlowRouter.route("/other", {
+    action: function() {
+        ReactLayout.render(AppBody, {
+            content: <Other />
+        });
+    }
+});
+
+FlowRouter.route("/Settings", {
+    action: function() {
+        ReactLayout.render(AppBody, {
+            content: <Settings />
+        });
+    }
+});
+
+
+
+
