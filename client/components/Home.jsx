@@ -8,6 +8,7 @@ Home = React.createClass({
     render() {
         let list = this.data.users.map(function(user) {
             return (
+
                 <div className="item item-avatar" key={user._id}>
                     <img src={user.avatar}></img>
                     <h2>{user.name}</h2>
