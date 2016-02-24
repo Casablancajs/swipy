@@ -1,19 +1,33 @@
-Home = React.createClass({
+Items = React.createClass({
     mixins: [ReactMeteorData],
     getMeteorData() {
         return {
-            users: MyData.find().fetch()
+            items: Posts.find().fetch()
         }
     },
     render() {
-        let list = this.data.users.map(function(user) {
+        let list = this.data.items.map(function(item) {
             return (
+              <div key={item._id}>
+                <div className="item item-avatar" >
+                    <img src={item.avatar}/>
+                    <h2>{item.author}</h2>
+                    <h2>{item.date.toString()}</h2>
 
-                <div className="item item-avatar" key={user._id}>
-                    <img src={user.avatar}></img>
-                    <h2>{user.name}</h2>
-                    <p>{user.email}</p>
+
                 </div>
+                    <div className="item item-body">
+                        <img className="full-image" src={item.image}/>
+                            <p>
+                                {item.description}
+                            </p>
+
+                    </div>
+                </div>
+
+
+
+
             )
         })
         return (

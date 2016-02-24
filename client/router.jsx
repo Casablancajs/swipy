@@ -1,20 +1,23 @@
 FlowRouter.route("/", {
+    name:"home",
     action: function() {
         ReactLayout.render(AppBody, {
-            content: <Home />
+            content: <Items />
         });
     }
 });
 
-FlowRouter.route("/other", {
+FlowRouter.route("/users", {
+    name:"users",
     action: function() {
         ReactLayout.render(AppBody, {
-            content: <Other />
+            content: <Users />
         });
     }
 });
 
 FlowRouter.route("/Settings", {
+    name:"settings",
     action: function() {
         ReactLayout.render(AppBody, {
             content: <Settings />

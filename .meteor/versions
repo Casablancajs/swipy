@@ -1,3 +1,4 @@
+arillo:flow-router-helpers@0.5.1
 autopublish@1.0.4
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
@@ -82,3 +83,4 @@ underscore@1.0.4
 url@1.0.5
 webapp@1.2.3
 webapp-hashing@1.0.5
+zimme:active-route@2.3.2

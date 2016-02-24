@@ -12,13 +12,13 @@ Tabs = React.createClass({
     render(){
         return(
             <div className="tabs">
-                <a className="tab-item">
+                <a href={FlowHelpers.pathFor( 'home')} className="tab-item">
                     Home
                 </a>
-                <a className="tab-item">
-                    Favorites
+                <a href={FlowHelpers.pathFor( 'users')} className="tab-item">
+                    Users
                 </a>
-                <a className="tab-item">
+                <a href={FlowHelpers.pathFor( 'settings')} className="tab-item">
                      Settings
                 </a>
             </div>
